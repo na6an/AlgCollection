@@ -108,3 +108,6 @@ awk -F: '{
 ## Frequency of occurrence
 sort | uniq -c | sort -nr
 cat list-1 list-2 list-3 | sort | uniq > final.list
+
+# Rename multiple files
+rename -n 's/.{4}(.*)/$1/'
